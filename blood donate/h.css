@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+body{
+    background-color: #E7DFD5;
+}
+
+nav{
+    
+    height: 80px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+   
+   
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 250px;
+
+}
+nav ul li{
+    margin-right: 80px;
+    
+}
+nav ul li a{
+    color: #CB2B2B;
+    font-weight: bold;
+    position: relative;
+    padding: 4.5px;
+}
+nav ul li a:hover{
+    color: #E7DFD5;
+    
+}
+nav ul li a::before{
+    content: '';
+    left: 0;
+    bottom: -5px;
+    position: absolute;
+    height: 0px;
+    background-color: #CB2B2B;
+    z-index: -1;
+    width: 100%;
+    transition: height 0.7s;
+    border-bottom: 1px solid #CB2B2B;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+nav ul li a:hover::before{
+    height: 60px;
+}
+
+
+.row{
+    display: flex;
+    height: 87.3vh;
+    
+}
+.col-1{
+   
+    
+    
+    width: 600px;
+   
+}
+.a{
+  margin-top: 100px;
+}
+
+.col-1 h1{
+    font-size: 47px;
+    color: #CB2B2B;
+    margin-left: 10px;
+    padding-left:10px ;
+    border-left:2px solid #CB2B2B;
+    
+}
+.col-1 h2{
+    margin-top: 30px;
+    font-size: 35px;
+    margin-left: 70px;
+    margin-bottom: 30px;
+}
+.col-1 p{
+    width: 480px;
+   margin-bottom: 60px; 
+   margin-left: 30px;
+   font-weight: bold;
+   padding-bottom: 10px;
+   border-bottom:2px solid #CB2B2B;
+}
+.logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+.logos a{
+    margin-right: 20px;
+}
+span{
+    color: #CB2B2B;
+}
+
+
+.col-2{
+    
+    width: 500px;
+}
+button{
+    width: 150px;
+    height: 35px;
+    color: black;
+    background-color: #CB2B2B;
+    margin-left: 170px;
+    border-radius: 10px;
+    border: none;
+    
+    font-weight: bold;
+}
+button:hover{
+    background-color: #cb2b2b8b;
+    box-shadow: -2px 3px 5px #CB2B2B;
+}
+.b{
+    margin-left: 19px;
+}

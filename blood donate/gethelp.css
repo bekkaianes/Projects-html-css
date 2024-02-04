@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+body{
+    background-color: #E7DFD5;
+    
+}
+section{
+    display: flex;
+    justify-content: center;
+    
+}
+.titre{
+    /* background-color: #CB2B2B; */
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+nav{
+    
+    height: 80px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+   
+   
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 250px;
+
+}
+nav ul li{
+    margin-right: 80px;
+    
+}
+nav ul li a{
+    color: #CB2B2B;
+    font-weight: bold;
+    position: relative;
+    padding: 4.5px;
+}
+nav ul li a:hover{
+    color: #E7DFD5;
+    
+}
+nav ul li a::before{
+    content: '';
+    left: 0;
+    bottom: -5px;
+    position: absolute;
+    height: 0px;
+    background-color: #CB2B2B;
+    z-index: -1;
+    width: 100%;
+    transition: height 0.7s;
+    border-bottom: 1px solid #CB2B2B;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+nav ul li a:hover::before{
+    height: 60px;
+}
+#gethelp ::before{
+    border-bottom: 5px solid #CB2B2B;
+    
+}
+button{
+    width: 150px;
+    height: 35px;
+    color: black;
+    background-color: #CB2B2B;
+    margin-left: 230px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    font-weight: bold;
+}
+button:hover{
+    background-color: #cb2b2b8b;
+    box-shadow: -2px 3px 5px #CB2B2B;
+}
+form{
+   background-color: #cb2b2b20;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    width: 600px;
+    padding: 30px;
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 70px 0 70px 0;
+    padding-top:60px ;
+    
+}
+.col{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+
+}
+input{
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+    border:0.5px solid #CB2B2B;
+    box-shadow: 1px 1px 4px #CB2B2B;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+label{
+    font-weight: bold;
+}
+input:focus{
+    box-shadow: none;
+    color: #CB2B2B;
+    border-radius: 1px;
+    
+}
